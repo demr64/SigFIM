@@ -19,7 +19,7 @@ def info_dash(msg):
    print(f"[{Fore.CYAN}-{Style.RESET_ALL}] {msg}")
 
 
-def alert_dash(msg):
+def alert_note(msg):
    print(f"[{Fore.YELLOW}!{Style.RESET_ALL}] {msg}")
 
 
@@ -31,7 +31,7 @@ def status_alert(msg):
    print(f"[{Fore.LIGHTRED_EX}ALERT{Style.RESET_ALL}]: {msg}")
 
 
-def printError(error):
+def status_error(error):
     print(f"[{Fore.RED}ERROR{Style.RESET_ALL}]: {error}")
 
 
@@ -41,7 +41,7 @@ def hash_file(path, hash_func):
         with open(Path(path), 'rb') as f:
             return hash_func(f.read()).hexdigest()
     except Exception as e:
-        raise e
+        raise 
 
 
 def load_yaml() -> dict:
@@ -85,7 +85,7 @@ def sign(password_bytes):
         with open(Path(signature_file), 'wb') as sig:
             sig.write(signature)
     except Exception as e:
-        raise e
+        raise
 
 
 def prove():
@@ -100,4 +100,4 @@ def prove():
     except InvalidSignature:
         raise ValueError("Signature verification failed.")
     except Exception as e:
-        raise e
+        raise 

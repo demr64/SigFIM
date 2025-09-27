@@ -21,7 +21,7 @@ cd SigFIM
 
 ## Manual
 We may start by setting up things in our .yaml file.
-Under the ```to-monitor``` and ```files``` section, and we may list the absolute paths of the files that we want to monitor, everyone on a new line preceded by a dash, now we can go in the ```hash``` section and we may list the algorithm that we want to use, note that in this section we are allowed to list down every algorithm supported by the [hashlib](https://docs.python.org/3/library/hashlib.html) library.
+Under the ```to-monitor``` and ```files``` section, and we may list the absolute paths of the files that we want to monitor, every of them on a new line preceded by a dash, now we can go in the ```hash``` section and we may write the hashing algorithm that we want to use, note that in this section we are allowed to list down every algorithm supported by the [hashlib](https://docs.python.org/3/library/hashlib.html) library.
 
 By now we are ready to run our gfim script:
 ```
@@ -42,4 +42,4 @@ python gfim.py --verify
 
 MIT License
 
-See [LICENSE](LICENSE) for more details.
+See [LICENSE](LICENSE.txt) for more details.
