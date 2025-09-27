@@ -1,7 +1,5 @@
 to-monitor:
   files:
-    - D:/code/python/projects/SigFIM/redacted.txt
-    - D:/code/python/projects/SigFIM/redact1.txt
 
 hash: sha256
 
